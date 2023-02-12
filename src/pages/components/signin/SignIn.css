@@ -1,0 +1,52 @@
+.bg {
+  background-image: url(../../../assets/AuthSnow.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 50%;
+  height: 100vh;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  box-shadow: 6px 0px 11px 2px rgba(50, 79, 246, 0.4);
+}
+
+.logo {
+  width: 200px;
+  margin-top: 78px;
+  margin-left: 80px;
+}
+.content-Div {
+  margin-left: 100px;
+  margin-top: 50px;
+  width: 700px;
+  height: 100px;
+}
+.contentDiv2 {
+  margin-left: 100px;
+  margin-top: 86px;
+  width: 570px;
+  height: 150px;
+}
+.signInText1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: azure;
+  letter-spacing: 0.1rem;
+}
+.signInText2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 33px;
+  color: azure;
+}
+/* .focus-blues:focus {
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  } */
+
+
+  

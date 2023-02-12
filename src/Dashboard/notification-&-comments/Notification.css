@@ -1,0 +1,121 @@
+.notification {
+  /* display: flex; */
+  /* margin: auto auto; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 70px;
+
+  position: relative;
+  width: 525.79px;
+  height: 338px;
+
+  background: #ffffff;
+  box-shadow: 0px 10px 24px rgba(9, 17, 89, 0.1);
+  border-radius: 16px;
+}
+.date {
+  /* width: 45px; */
+  height: 21px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  /* #0C0E41 */
+
+  color: #0c0e41;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.view {
+  width: 64px;
+  height: 24px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-decoration-line: underline;
+margin-bottom: 31px;
+  /* Priymary_color_Blue */
+
+  color: #324ff6;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.notify {
+  width: 231px;
+  height: 24px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  /* #0C0E41 */
+
+  color: #0c0e41;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.newNotification {
+  width: 391px;
+  height: 21px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  margin-top: 8px;
+  /* Off-Black */
+
+  color: #6b6f86;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* comments */
+
+.time {
+  height: 15px;
+  left: 347px;
+  top: 62px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  /* identical to box height */
+
+  color: #6b6f86;
+}
