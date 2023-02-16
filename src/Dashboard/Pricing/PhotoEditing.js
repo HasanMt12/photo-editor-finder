@@ -3,6 +3,57 @@ import PricingCard from "../../pages/components/PricingCard";
 import Tabs from "../../pages/components/Tabs/Tabs";
 
 const PhotoEditing = () => {
+  const commonServices = [
+    "Single Raw Edit",
+    "Color correction",
+    "Lens corrections",
+    "Lens corrections",
+    "Blemish removal",
+    "Chromatic Abberation",
+    "Brightness and Contrast adjustment",
+  ];
+  const basicEditInfo = {
+    title: "Basic",
+    price: "0.80",
+    thumbnail: "https://via.placeholder.com/150x150",
+    serviceList: [...commonServices],
+  };
+  const basicPlusEditInfo = {
+    title: "Basic Plus",
+    price: "1.80",
+    thumbnail: "https://via.placeholder.com/150x150",
+    serviceList: [
+      ...commonServices,
+      "Exteriros Sky replacements",
+      "Lawn Enhancement",
+    ],
+  };
+
+  const standardEditInfo = {
+    title: "Standard",
+    price: "2.80",
+    thumbnail: "https://via.placeholder.com/150x150",
+    serviceList: [
+      ...basicPlusEditInfo.serviceList,
+      "Interiors sky replacements",
+      "Window replacement",
+      "Hard flash shadows removal",
+    ],
+  };
+
+  const advanceEditInfo = {
+    title: "Advance",
+    price: "2.80",
+    thumbnail: "https://via.placeholder.com/150x150",
+    serviceList: [
+      ...standardEditInfo.serviceList,
+      "Reflections removal",
+      "TV and fires replacement",
+      "Interiors sky replacements",
+      "Window replacement",
+      "Hard flash shadows removal",
+    ],
+  };
   return (
     <div className="">
       <div className="ml-8">
@@ -27,10 +78,10 @@ const PhotoEditing = () => {
             </p>
           </div>
           <div className="mt-7">
-            <PricingCard title={"Basic"} price={"0.80"} />
-            <PricingCard title={"Basic plus"} price={"1.80"} />
-            <PricingCard title={"Standard"} price={"2.80"} />
-            <PricingCard title={"Advance"} price={"3.80"} />
+            <PricingCard pricingDetails={basicEditInfo} />
+            <PricingCard pricingDetails={basicPlusEditInfo} />
+            <PricingCard pricingDetails={standardEditInfo} />
+            <PricingCard pricingDetails={advanceEditInfo} />
           </div>
         </div>
       </div>

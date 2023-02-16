@@ -3,6 +3,24 @@ import PricingCard from "../../pages/components/PricingCard";
 import Tabs from "../../pages/components/Tabs/Tabs";
 
 const VideoEdits = () => {
+  const unbrandingProccess = {
+    title: "UNBRANDING PROCESSING",
+    price: "50.80",
+    thumbnail: "https://via.placeholder.com/150x150",
+    serviceList: ["Single Raw Edit", "Color correction", "Lens corrections"],
+  };
+  const brandingProccess = {
+    title: "Branding PROCESSING",
+    price: "65.80",
+    thumbnail: "https://via.placeholder.com/150x150",
+    serviceList: [
+      ...unbrandingProccess.serviceList,
+      "Blemish removal",
+      "Blemish removal",
+      "Brightness and Contrast adjustment",
+      "Exteriros Sky replacements",
+    ],
+  };
   return (
     <div className="">
       <div className="ml-8">
@@ -27,8 +45,8 @@ const VideoEdits = () => {
             </p>
           </div>
           <div className="mt-7">
-            <PricingCard title={"Unbranding"} price={"50.80"} />
-            <PricingCard title={"Branding"} price={"61.80"} />
+            <PricingCard pricingDetails={unbrandingProccess} />
+            <PricingCard pricingDetails={brandingProccess} />
           </div>
         </div>
       </div>

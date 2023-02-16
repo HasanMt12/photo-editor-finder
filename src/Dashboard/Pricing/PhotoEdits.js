@@ -3,6 +3,89 @@ import PricingCard from "../../pages/components/PricingCard";
 import Tabs from "../../pages/components/Tabs/Tabs";
 
 const PhotoEdits = () => {
+  const photoEditsData = [
+    {
+      title: "Major object removal",
+      price: "1.80",
+      thumbnail: "https://via.placeholder.com/150x150",
+      serviceDesc: [
+        "Below is the list of all the pricing options that we provide, choose your own pricing.",
+        "Below is the list of all the pricing options that we provide,",
+      ],
+    },
+    {
+      title: "Photo enhancement",
+      price: "0.80",
+      thumbnail: "https://via.placeholder.com/150x150",
+      serviceDesc: [
+        "Below is the list of all the pricing options that we provide, choose your own pricing.",
+        "Below is the list of all the pricing options that we provide,",
+      ],
+    },
+    {
+      title: "Lawn Replacement",
+      price: "1.00",
+      thumbnail: "https://via.placeholder.com/150x150",
+      serviceDesc: [
+        "Below is the list of all the pricing options that we provide, choose your own pricing.",
+        "Below is the list of all the pricing options that we provide,",
+      ],
+    },
+    {
+      title: "Virtual Twilight",
+      price: "1.50",
+      thumbnail: "https://via.placeholder.com/150x150",
+      serviceDesc: [
+        "Below is the list of all the pricing options that we provide, choose your own pricing.",
+        "Below is the list of all the pricing options that we provide,",
+      ],
+    },
+    {
+      title: "Virtual Twilight",
+      price: "1.80",
+      thumbnail: "https://via.placeholder.com/150x150",
+      serviceDesc: [
+        "Below is the list of all the pricing options that we provide, choose your own pricing.",
+        "Below is the list of all the pricing options that we provide,",
+      ],
+    },
+    {
+      title: "Declutter",
+      price: "1.80",
+      thumbnail: "https://via.placeholder.com/150x150",
+      serviceDesc: [
+        "Below is the list of all the pricing options that we provide, choose your own pricing.",
+        "Below is the list of all the pricing options that we provide,",
+      ],
+    },
+    {
+      title: "Window replacement",
+      price: "1.80",
+      thumbnail: "https://via.placeholder.com/150x150",
+      serviceDesc: [
+        "Below is the list of all the pricing options that we provide, choose your own pricing.",
+        "Below is the list of all the pricing options that we provide,",
+      ],
+    },
+    {
+      title: "miner object removal",
+      price: "1.80",
+      thumbnail: "https://via.placeholder.com/150x150",
+      serviceDesc: [
+        "Below is the list of all the pricing options that we provide, choose your own pricing.",
+        "Below is the list of all the pricing options that we provide,",
+      ],
+    },
+    {
+      title: "Twilight",
+      price: "1.80",
+      thumbnail: "https://via.placeholder.com/150x150",
+      serviceDesc: [
+        "Below is the list of all the pricing options that we provide, choose your own pricing.",
+        "Below is the list of all the pricing options that we provide,",
+      ],
+    },
+  ];
   return (
     <div className="">
       <div className="ml-8">
@@ -27,18 +110,9 @@ const PhotoEdits = () => {
             </p>
           </div>
           <div className="mt-7">
-            <PricingCard title={"Photo Enhancement"} price={"0.80"} />
-            <PricingCard title={"Lawn Replacement"} price={"1.80"} />
-            <PricingCard title={"Virtual Twilight"} price={"2.80"} />
-            <PricingCard title={"Item removal"} price={"3.80"} />
-            <PricingCard title={"Photo Enhancement"} price={"0.80"} />
-            <PricingCard title={"Lawn Replacement"} price={"1.80"} />
-            <PricingCard title={"Virtual Twilight"} price={"2.80"} />
-            <PricingCard title={"Item removal"} price={"3.80"} />
-            <PricingCard title={"Photo Enhancement"} price={"0.80"} />
-            <PricingCard title={"Lawn Replacement"} price={"1.80"} />
-            <PricingCard title={"Virtual Twilight"} price={"2.80"} />
-            <PricingCard title={"Item removal"} price={"3.80"} />
+            {photoEditsData.map((data) => (
+              <PricingCard pricingDetails={data} />
+            ))}
           </div>
         </div>
       </div>
