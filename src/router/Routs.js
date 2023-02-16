@@ -1,20 +1,21 @@
 import { createBrowserRouter } from "react-router-dom";
 
-
 import Notification from "../Dashboard/notification-&-comments/Notification";
 
 import DashboardLayout from "../layout/DashboardLayout";
 
+import DashboardHome from "../Dashboard/DashboardHome";
+import MyPlan from "../Dashboard/MyPlan/MyPlan";
+import PhotoEditing from "../Dashboard/Pricing/PhotoEditing";
+import PhotoEdits from "../Dashboard/Pricing/PhotoEdits";
+import VideoEdits from "../Dashboard/Pricing/VideoEdits";
+import Projects from "../Dashboard/table/Projects";
+import Team from "../Dashboard/Team/Team";
 import ForgotPass from "../pages/components/signin/ForgotPass";
 import SignIn from "../pages/components/signin/SignIn";
 import Signup from "../pages/components/signup/Signup";
 import Table from "./../Dashboard/table/Table";
 import Main from "./../layout/Main";
-import DashboardHome from "../Dashboard/DashboardHome";
-import Projects from "../Dashboard/table/Projects";
-import MyPlan from "../Dashboard/MyPlan/MyPlan";
-import Team from "../Dashboard/Team/Team";
-
 
 export const router = createBrowserRouter([
   {
@@ -48,30 +49,40 @@ export const router = createBrowserRouter([
       },
     ],
   },
-   {
-       path: "/dashboard",
-        element: <DashboardLayout></DashboardLayout>, 
-        children:[
-            {
-                path:'/dashboard',
-                element:<DashboardHome></DashboardHome>
-            },
-            {
-              path:'/dashboard/projects',
-              element:<Projects></Projects>
-            },
-            {
-              path: '/dashboard/plan',
-              element: <MyPlan></MyPlan>
-            },
-            {
-              path: '/dashboard/team',
-              element: <Team></Team>
-            }
-           
-             
-        ]
-    }
+  {
+    path: "/dashboard",
+    element: <DashboardLayout></DashboardLayout>,
+    children: [
+      {
+        path: "/dashboard",
+        element: <DashboardHome></DashboardHome>,
+      },
+      {
+        path: "/dashboard/projects",
+        element: <Projects></Projects>,
+      },
+      {
+        path: "/dashboard/plan",
+        element: <MyPlan></MyPlan>,
+      },
+      {
+        path: "/dashboard/team",
+        element: <Team></Team>,
+      },
+      {
+        path: "/dashboard/pricing",
+        element: <PhotoEditing />,
+      },
+      {
+        path: "/dashboard/photo-edits",
+        element: <PhotoEdits />,
+      },
+      {
+        path: "/dashboard/video-edits",
+        element: <VideoEdits />,
+      },
+    ],
+  },
 ]);
 
 export default router;
