@@ -1,0 +1,45 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.PaidButton {
+    background: rgba(3, 226, 97, 0.21);
+    border-radius: 43px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    /* identical to box height */
+
+    color: #008A48;
+}
+
+.PendingButton {
+    background: rgba(255, 241, 204, 0.28);
+    border-radius: 43px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    /* identical to box height */
+
+    color: #FFB800
+}
+
+
+
+.processedButton {
+    background: rgba(212, 218, 255, 0.28);
+
+    border-radius: 43px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    /* identical to box height */
+
+    color: #304FFF;
+}

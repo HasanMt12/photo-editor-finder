@@ -1,0 +1,426 @@
+.rejectButton {
+  background: rgba(255, 41, 41, 0.21);
+  border-radius: 43px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #ff2929;
+}
+
+.processButton {
+  background: rgba(255, 153, 0, 0.21);
+  border-radius: 43px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #ff9900;
+}
+.editButton {
+  background: rgba(50, 79, 246, 0.21);
+  border-radius: 43px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #324ff6;
+}
+.editButton1 {
+  background: rgba(246, 50, 171, 0.21);
+  border-radius: 43px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #f632c8;
+}
+.new-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+
+  width: 108px;
+  height: 32px;
+  line-height: 30px;
+
+  /* Inside auto layout */
+}
+.new {
+  width: 44px;
+  height: 30px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  /* line-height: 30px; */
+  /* identical to box height */
+
+  color: #5e75fb;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.new-change {
+  width: 44px;
+  height: 30px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  /* line-height: 30px; */
+  /* identical to box height */
+
+  color: #6b6f86;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px 8.5px;
+  gap: 10px;
+
+  width: 23px;
+  height: 23px;
+
+  /* Priymary_color_Blue */
+
+  background: #324ff6;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.one-change {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px 8.5px;
+  gap: 10px;
+
+  width: 23px;
+  height: 23px;
+
+  /* Priymary_color_Blue */
+
+  background: #6b6f86;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.text {
+  width: 6px;
+  height: 19px;
+
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.editing-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 14px;
+  gap: 15px;
+
+  width: 134px;
+  height: 32px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.editing {
+  width: 69px;
+  height: 30px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  /* Off-Black */
+
+  color: #6b6f86;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.two {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px 8.5px;
+  gap: 10px;
+
+  width: 23px;
+  height: 23px;
+
+  /* Off-Black */
+
+  background: #6b6f86;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.text-1 {
+  width: 6px;
+  height: 19px;
+
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.completed-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 13px;
+  gap: 15px;
+
+  width: 172px;
+  height: 32px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.completed {
+  width: 114px;
+  height: 30px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  /* Off-Black */
+
+  color: #6b6f86;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.three {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px 8.5px;
+  gap: 10px;
+
+  width: 31px;
+  height: 23px;
+
+  /* Off-Black */
+
+  background: #6b6f86;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.text-2 {
+  width: 14px;
+  height: 19px;
+
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.tab {
+  position: absolute;
+  left: 22.6%;
+  right: 71.46%;
+  top: 20.17%;
+  bottom: 79.83%;
+
+  border: 3px solid #407bff;
+  border-radius: 31px;
+}
+.create-project {
+  width: 152px;
+  height: 40px;
+
+  box-sizing: border-box;
+
+  border: 1.5px solid #324ff6;
+  border-radius: 31px;
+}
+.text-3 {
+
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  /* line-height: 21px; */
+
+  color: #324ff6;
+}
+
+.no-projects{
+    /* width: 210px;
+    height: 35px; */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 34px;
+    /* identical to box height */
+    
+    
+    /* text_color */
+    
+    color: #090D28;
+    
+}
+.line{
+    left: 5.27%;
+    right: 1.65%;
+    top: 94.68%;
+    bottom: 5.17%;
+    
+    background: #263238;
+}
+.start{
+    width: 480px;
+    height: 27px;
+    
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    
+    /* Off-Black */
+    
+    color: #6B6F86;
+    
+}
+.search-div{
+ 
+
+  width: 236px;
+  height: 40px;
+
+  box-sizing: border-box;
+
+  background: linear-gradient(183.13deg, #FFFFFF 3.71%, #FFFFFF 92.75%);
+border: 1px solid #324FF6;
+border-radius: 227px;
+  /* font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px; */
+  padding: 0;
+  
+}
+.search-img{
+  width: 20px;
+  height: 20px;
+  margin-left: 14.5px;
+}
+.search-text{
+margin-left: 18.67px;
+margin-right: 83.5px;
+}
