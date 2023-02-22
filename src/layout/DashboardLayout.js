@@ -320,7 +320,7 @@ const DashboardLayout = () => {
       </aside>
 
       {/* right side layout */}
-      <div className="main-bg h-screen sm:ml-64 ml-8">
+      <div className="main-bg h-screen -mt-5 full sm:ml-64 -mr-5">
        
 
           <div className="flex pl-20 justify-between h-[100px]  rightSide">
