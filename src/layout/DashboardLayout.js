@@ -15,7 +15,7 @@ import '../Dashboard/notification-&-comments/Notification.css'
 
 import gallery from "../assets/gallery.png";
 
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import logo from "../assets/Final Logo 1.png";
 
 const DashboardLayout = () => {
@@ -30,6 +30,8 @@ const DashboardLayout = () => {
   } else {
     document.body.classList.remove("active-modal");
   }
+
+  const {pathname} = useLocation();
 
   return (
     <div className="h-screen w-full">
@@ -62,13 +64,13 @@ const DashboardLayout = () => {
         className="fixed  top-0 left-0 z-40 w-72 h-screen asideDesign transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar"
       >
-        <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50">
+        <div className="h-full px-3 py-4  bg-gray-50">
           <img className="w-[200px] p-4 mb-4" src={logo}></img>
           <hr className="hr"></hr>
           <ul className="space-y-1 -mx-3 ">
             <Link
               to="/dashboard"
-              className="flex items-center pl-16 py-5 hover:text-indigo-600 border-l-4 border-white cursor-pointer h-[30px]  text-black transition-colors duration-300 transform  hover:bg-violate-300 hover:bg-indigo-300/40 hover:border-l-4 hover:border-indigo-600 "
+              className="flex items-center pl-16 py-5 hover:text-indigo-600 border-l-4 border-white cursor-pointer h-[30px]  text-black transition-colors duration-300 transform  hover:bg-violate-300 hover:bg-indigo-300/40 active:bg-indigo-300/40 hover:border-l-4 hover:border-indigo-600 "
             >
               <BiHomeAlt className="h-[20px] w-[22px] "></BiHomeAlt>
               <span className="mx-2 text-sm font-medium ">Dashboard</span>
@@ -119,8 +121,15 @@ const DashboardLayout = () => {
               <span className="mx-2 text-sm font-medium ">Drive</span>
             </Link>
           </ul>
+<div></div>
 
-          <div className="mt-16 mb-12 space-x-1 -ml-4">
+          <div className={`${
+              pathname === "/dashboard"
+                ? "mt-16 mb-12 space-x-1 -ml-4"
+                : "static space-x-1 -ml-4"
+            }`}>
+
+            <div className={`${pathname==="/dashboard"? "":"absolute bottom-20 w-full"}`}>
             <hr className="hr "></hr>
             <Link
               to="/dashboard"
@@ -172,8 +181,13 @@ const DashboardLayout = () => {
               </svg>
               <span className="mx-2 text-sm font-medium ">Logout</span>
             </Link>
+            </div>
           </div>
-          <div className="leftSideCard flex justify-center items-center my-6 mx-auto">
+
+
+          {pathname === '/dashboard' && (
+
+            <div className="leftSideCard flex justify-center items-center my-6 mx-auto">
             <div>
               {/* crown svg */}
               <svg
@@ -302,25 +316,40 @@ const DashboardLayout = () => {
                 </h4>
               </div>
 
-              <button className="upgradeButton1 mx-auto mt-2 cursor-pointer flex items-center justify-center">
+              <button className="upgradeButton1 hover:bg-gray-100 mx-auto mt-2 cursor-pointer flex items-center justify-center hover:shadow-[#5868c5] shadow-md" >
                 <h3
-                  style={{ color: "#324FF6" }}
-                  className="text-center text-sm font-medium"
+                
+                  className="text-center text-sm text-[#324FF6] font-medium hover:text-[#5868c5]"
                 >
                   Upgrade Now
                 </h3>
               </button>
+             
             </div>
+            
           </div>
-          <h4 className="text-center text-xs">
+          )}
+          
+         
+
+          <div class="static ">
+  
+  <div class="absolute bottom-2 left-[15%]">
+   <h4 className=" text-xs">
             {" "}
             © 2015-2022Photoshare® Global Inc.
           </h4>
+  </div>
+</div>
+        
         </div>
+       
+ 
+       
       </aside>
 
       {/* right side layout */}
-      <div className="main-bg h-screen -mt-5 full sm:ml-64 -mr-5">
+      <div className="main-bg h-screen  full sm:ml-64 ">
        
 
           <div className="flex pl-20 justify-between h-[100px]  rightSide">
@@ -376,7 +405,18 @@ const DashboardLayout = () => {
                 <div className="divider"></div>
               </div>
               <div className="flex justify-center gap-4 mt-4">
-               <img className='w-[30px] h-[30px]' src={logo2} alt="logo2"></img>
+               
+               <div class="circle-wrapper">
+    <div class="success circle"><div class="border-extra"></div></div>
+    
+    <div class="icon">
+     <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.01825 14.4037V13.1378C1.32667 12.6358 0.134766 10.4447 0.134766 7.59254V6.90208C0.134766 4.03091 1.32667 1.85423 4.01825 1.35652V0.019043H6.35418V1.32488C8.88604 1.69543 10.0771 3.37843 10.0771 5.41327V5.88797H7.38345C7.38345 4.5502 6.72647 3.68712 5.32491 3.68712C3.66056 3.68712 2.98168 4.917 2.98168 6.90208V7.59254C2.98168 9.55633 3.66085 10.7859 5.32491 10.7859C6.77027 10.7859 7.38345 9.92285 7.38345 8.80085H10.0771V9.25397C10.0771 11.1749 8.88604 12.8107 6.35448 13.1718V14.4037H4.01825Z" fill="white"/>
+</svg>
+    </div>
+  </div>
+
+               
               <div>
                   <h4 className="Text-3">30 Free Credits</h4>
                   <h4 className="Text-4">Buy more cre dits!!</h4>
@@ -406,7 +446,8 @@ const DashboardLayout = () => {
       </div>
 
        {modal && (
-        <div className="modal">
+        
+        <div className="modal" data-aos="zoom-in">
           <div onClick={toggleModal} className="overlay">
             <div className="notification modal-content">
               <h1 className="text-[#0C0E41] notify mx-auto">

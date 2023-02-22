@@ -13,10 +13,10 @@ const MyPlan = () => {
    
     return (
        
-       <div className=" ml-3">
+       <div className="bg-[#F5F5F5]">
 
     
-      <div className=" bg-white w-[97%] mx-auto mt-5">
+      <div className="bg-white ml-12 w-[95%] mx-auto mt-4 ">
        <div className='pb-4 '>
             <div className='flex justify-center  items-center'> 
                 <div>

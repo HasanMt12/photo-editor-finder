@@ -286,15 +286,15 @@ body.active-modal {
     position: fixed;
 }
 
-.overlay {
-    background: rgba(179, 179, 179, 0.8);
+/* .overlay {
+    background: rgba(245, 241, 241, 0.8);
 
-}
+} */
 
 .modal-content {
     position: absolute;
-    top: 30%;
-    left: 60%;
+    top: 25%;
+    left: 80%;
     transform: translate(-50%, -50%);
 }
 

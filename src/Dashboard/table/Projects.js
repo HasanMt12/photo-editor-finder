@@ -177,7 +177,7 @@ const Projects = () => {
                 <div
                   className={`  py-2 px-4 ${
                     activeTab === 0
-                      ? " text-blue-600 font-semibold "
+                      ? " text-blue-600  "
                       : "text-gray-500"
                   }`}
                   onClick={() => handleTabClick(0)}
@@ -202,7 +202,7 @@ const Projects = () => {
                 </div>
               </div>{" "}
               <hr
-                className={`  h-1 mt-4 -mb-6 ${
+                className={`  h-1 mt-5 -mb-5 ${
                   activeTab === 0 ? "bg-blue-500" : "hidden"
                 }`}
               />
@@ -213,7 +213,7 @@ const Projects = () => {
                 <div
                   className={`  py-2 px-4 ${
                     activeTab === 1
-                      ? " text-blue-600 font-semibold "
+                      ? " text-blue-600  "
                       : "text-gray-500"
                   }`}
                   onClick={() => handleTabClick(1)}
@@ -238,7 +238,7 @@ const Projects = () => {
                 </div>
               </div>
               <hr
-                className={`  h-1 mt-4 -mb-6 ${
+                className={`  h-1 mt-5 -mb-5 ${
                   activeTab === 1 ? "bg-blue-500" : "hidden"
                 }`}
               />
@@ -250,7 +250,7 @@ const Projects = () => {
                 <div
                   className={`  py-2 px-4 ${
                     activeTab === 2
-                      ? " text-blue-600 font-semibold "
+                      ? " text-blue-600 "
                       : "text-gray-500"
                   }`}
                   onClick={() => handleTabClick(2)}
@@ -275,7 +275,7 @@ const Projects = () => {
                 </div>
               </div>
               <hr
-                className={`  h-1 mt-4 -mb-6 ${
+                className={`  h-1 mt-5 -mb-5 ${
                   activeTab === 2 ? "bg-blue-500" : "hidden"
                 }`}
               />

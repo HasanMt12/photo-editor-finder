@@ -296,8 +296,9 @@ const DashboardHome = () => {
                 Upgrade to Professional Plan
               </h3>
               <h3 className="font-medium text-4xl ">$ 200</h3>
-              <div className="upgradeButton mt-6 flex items-center justify-center">
-                <h3 className="text-center Text-8">Upgrade Now</h3>
+              <div className="upgradeButton mt-6 flex items-center justify-center cursor-pointer hover:bg-[#536bbb]">
+                
+                <h3 className="text-center Text-8 hover:text-gray-200">Upgrade Now</h3>
               </div>
             </div>
 
@@ -703,7 +704,7 @@ const DashboardHome = () => {
                     style={{ color: "#777777", fontFamily: "Satoshi" }}
                     className="font-normal text-xs "
                   >
-                    High Resolution Enhancements
+                    High Resolution Enhancements 
                   </h4>
                 </div>
               </div>

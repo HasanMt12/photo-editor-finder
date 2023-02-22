@@ -1,19 +1,21 @@
 .notification {
-  /* display: flex; */
-  /* margin: auto auto; */
-  flex-direction: column;
+  /*display: flex;
+  *//*margin: auto auto;
+  */flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 35px;
   gap: 70px;
-
   position: relative;
   width: 525.79px;
   height: 338px;
-
   background: #ffffff;
   box-shadow: 0px 10px 24px rgba(9, 17, 89, 0.1);
-  border-radius: 16px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 .date {
   /* width: 45px; */

@@ -3,10 +3,10 @@ import React from 'react';
 
 const Plan = () => {
     return (
-        <section className="bg-white w-11/12 mx-auto ">
+        <section className="bg-white ">
   <div className="py-8 px-2 mx-auto max-w-screen-xl lg:py-16 lg:px-6 mr-7">
       
-      <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-20  lg:space-y-0 " > 
+      <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10  lg:space-y-0 " > 
         
         {/* price card 1 */}
           <div className="flex flex-col  mx-auto  max-w-md text-center p-4  bg-[#FFFFFF] rounded-[5.5836px] border border-[#324FF6]  shadow-[0_0px_12px_1px_rgba(46,114,255,0.26)]   xl:p-6 text-black">
@@ -97,7 +97,7 @@ const Plan = () => {
             
             <div className='flex justify-between items-center '> 
             <h3 className='w-[70px]'></h3>
-            <h3 className=" text-[24px] leading-[32px] text-[#324FF6] font-semibold">Lite</h3>
+            <h3 className=" text-[24px] leading-[32px] text-[#324FF6] font-semibold">Stander</h3>
              <div className='flex items-center justify-center bg-[#E1FFED] w-[76px] h-[30px]  rounded-[25px]'>
                     <h4  className='text-center text-[#0EC970] text-[14px] leading-[20px] font-semibold'>25% off</h4>
 
@@ -180,7 +180,7 @@ const Plan = () => {
             
             <div className='flex justify-between items-center '> 
             <h3 className='w-[70px]'></h3>
-            <h3 className=" text-[24px] leading-[32px] text-[#324FF6] font-semibold">Lite</h3>
+            <h3 className=" text-[24px] leading-[32px] text-[#324FF6] font-semibold">Advance</h3>
              <div className='flex items-center justify-center bg-[#E1FFED] w-[76px] h-[30px]  rounded-[25px]'>
                     <h4  className='text-center text-[#0EC970] text-[14px] leading-[20px] font-semibold'>25% off</h4>
 

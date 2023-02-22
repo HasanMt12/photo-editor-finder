@@ -9,6 +9,7 @@
 }
 .rs-slider .rs-tooltip {
   display: none;
+  visibility: hidden;
 }
 .rs-slider .rs-tooltip.rs-tooltip-placement-top .rs-tooltip::after {
   margin: auto;
@@ -227,7 +228,6 @@ mark {
  
 }
 
-#root{ padding: 20px; }
 
 
 

@@ -341,9 +341,11 @@ const DashBoard = () => {
                 <div className="divider"></div>
               </div>
               <div className="flex justify-center gap-4 mt-4">
-                <div className="">
+                {/* <div className="">
                   <img className="w-[25px] h-[25px]" src={sd} alt="s"></img>
-                </div>
+                </div> */}
+
+
                 <div>
                   <h4 className="Text-3">30 Free Credits</h4>
                   <h4 className="Text-4">Buy more cre dits!!</h4>
@@ -835,10 +837,20 @@ const DashBoard = () => {
                     style={{ color: "#777777", fontFamily: "Satoshi" }}
                     className="font-normal text-xs "
                   >
-                    Upto 16 Step Photo Enhancements
+                    Upto 16 Step Photo Enhancements ss
                   </h4>
                 </div>
-                <img src={rightArrow} alt="rArrow"></img>
+                <svg
+                className="custom-icon" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.1" cx="17" cy="17" r="17" fill="white"/>
+<path d="M12 22.4487L17.8164 16.6197L12 10.7906L13.7906 9L21.4103 16.6197L13.7906 24.2394L12 22.4487Z" fill="url(#paint0_linear_1_1714)"/>
+<defs>
+<linearGradient id="paint0_linear_1_1714" x1="16.7052" y1="9.18002" x2="15.447" y2="23.3794" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5E75FB"/>
+<stop offset="1" stop-color="#324FF7"/>
+</linearGradient>
+</defs>
+</svg>
               </div>
             </div>
           </div>
