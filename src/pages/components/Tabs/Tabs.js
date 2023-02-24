@@ -12,8 +12,8 @@ const Tabs = () => {
             to="/dashboard/pricing"
             class={`inline-block p-4 ${
               pathname === "/dashboard/pricing"
-                ? " text-blue-600 border-b-2 border-blue-600 active"
-                : "border-b-2 border-transparent"
+                ? " text-blue-600 border-b-2 border-blue-600 active text-lg"
+                : "border-b-2 border-transparent text-lg"
             } rounded-t-lg`}
           >
             Photo Editing
@@ -24,8 +24,8 @@ const Tabs = () => {
             to="/dashboard/photo-edits"
             class={`inline-block p-4 ${
               pathname === "/dashboard/photo-edits"
-                ? " text-blue-600 border-b-2 border-blue-600 active"
-                : "border-b-2 border-transparent"
+                ? " text-blue-600 border-b-2 border-blue-600 active text-lg"
+                : "border-b-2 border-transparent text-lg "
             } rounded-t-lg`}
           >
             Photo Edits
@@ -36,8 +36,8 @@ const Tabs = () => {
             to="/dashboard/video-edits"
             class={`inline-block p-4 ${
               pathname === "/dashboard/video-edits"
-                ? " text-blue-600 border-b-2 border-blue-600 active"
-                : "border-b-2 border-transparent"
+                ? " text-blue-600 border-b-2 border-blue-600 active text-lg"
+                : "border-b-2 border-transparent text-lg"
             } rounded-t-lg`}
           >
             Videos

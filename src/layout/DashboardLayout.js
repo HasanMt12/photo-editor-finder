@@ -8,7 +8,7 @@ import {
   HiOutlineUserGroup,
 } from "react-icons/hi";
 import { TbFileInvoice } from "react-icons/tb";
-import logo2 from "../assets/Captae-removebg-preview.png";
+
 import avatar from "../assets/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction 1@2x.png";
 import './DashBoard.css'
 import '../Dashboard/notification-&-comments/Notification.css'
@@ -20,7 +20,7 @@ import logo from "../assets/Final Logo 1.png";
 
 const DashboardLayout = () => {
   const [modal, setModal] = useState(false);
-
+  const [modal2, setModal2] = useState(false);
   const toggleModal = () => {
     setModal(!modal);
   };
@@ -29,6 +29,16 @@ const DashboardLayout = () => {
     document.body.classList.add("active-modal");
   } else {
     document.body.classList.remove("active-modal");
+  }
+
+    const toggleModal2 = () => {
+    setModal2(!modal2);
+  };
+
+  if (modal2) {
+    document.body.classList.add("active-modal2");
+  } else {
+    document.body.classList.remove("active-modal2");
   }
 
   const {pathname} = useLocation();
@@ -75,9 +85,10 @@ const DashboardLayout = () => {
               <BiHomeAlt className="h-[20px] w-[22px] "></BiHomeAlt>
               <span className="mx-2 text-sm font-medium ">Dashboard</span>
             </Link>
+
             <Link
               to="/dashboard/projects"
-              className="flex items-center pl-16 py-5 hover:text-indigo-600 border-l-4 border-white cursor-pointer h-[30px]  text-black transition-colors duration-300 transform  hover:bg-violate-300 hover:bg-indigo-300/60 hover:border-l-4 hover:border-indigo-600 "
+              className="flex items-center pl-16 py-5 hover:text-indigo-600 border-l-4 border-white cursor-pointer h-[40px]  text-black transition-colors duration-300 transform  hover:bg-violate-300 hover:bg-indigo-300/60 hover:border-l-4 hover:border-indigo-600 "
             >
               <FiFileText className="h-[20px] w-[22px] "></FiFileText>
               <span className="mx-2 text-sm font-medium ">Projects</span>
@@ -379,7 +390,8 @@ const DashboardLayout = () => {
                   </svg>
                 </div>
                 <div className="divider"></div>
-                <div className="mt-1 mx-3">
+                
+                <div onClick={toggleModal2} className="mt-1 mx-3">
                   <svg
                     className="hoverhighlight cursor-pointer"
                     width="22"
@@ -480,6 +492,47 @@ const DashboardLayout = () => {
           </div>
         </div>
       )}
+
+
+       {modal2 && (
+        
+        <div className="modal2" data-aos="zoom-in">
+          <div onClick={toggleModal2} className="overlay">
+           <div className="notification2 mt-10">
+        <h1 className="text-[ #0C0E41] notify mx-auto">You have 1 new Notifications</h1>
+        <div className="flex justify-between items-center gap-6 mt-[38px]">
+          <img className="" src={gallery} alt="" />
+          <div>
+            <div className='flex justify-between items-center'>
+            <p className="font-bold pb-2 date">Feb 22</p>
+            <p className='time'>10:39 pm</p>
+            </div>
+            <p className="new">If you like what we do, please tell your friends and share.</p>
+          </div>
+        </div>
+        <div className="flex justify-between items-center gap-6 mt-[20px]">
+          <img className="" src={gallery} alt="" />
+          <div>
+          <div className='flex justify-between items-center'>
+            <p className="font-bold pb-2 date">Feb 22</p>
+            <p className='time'>1 day ago</p>
+            </div>
+            <p className="newNotification">If you like what we do, please tell your friends and share.</p>
+          </div>
+        </div>
+        <button className="flex mx-auto mt-[70px] "><Link to="/viewAll" className=" view ">
+          View All
+        </Link></button>
+      
+      </div>
+          </div>
+        </div>
+      )}
+
+
+      
+
+       
     </div>
   );
 };

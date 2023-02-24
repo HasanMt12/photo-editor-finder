@@ -62,7 +62,7 @@ const DashboardHome = () => {
               <h3 className="Text-6 ">254</h3>
             </div>
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-between ">
             <div className="pl-8">
               <svg
                 className="mt-4"
@@ -292,7 +292,7 @@ const DashboardHome = () => {
                   ></path>
                 </svg>
               </div>
-              <h3 className="Text-7  mt-3 mb-2 ">
+              <h3 className="Text-7 font-semibold mt-3 mb-2 ">
                 Upgrade to Professional Plan
               </h3>
               <h3 className="font-medium text-4xl ">$ 200</h3>
@@ -302,10 +302,10 @@ const DashboardHome = () => {
               </div>
             </div>
 
-            <div className="pl-6 pt-4">
-              <div className="w-[200px] h-[40px] ">
-                <h4 className="font-medium text-sm text-start Text-9">
-                  You’re Currently Subscribed to a Starter Plan
+            <div className="pl-6 pt-4 pr-2">
+              <div className="w-[285px] h-[40px] ">
+                <h4 className="font-medium text-sm text-start Text-9 ">
+                  You’re Currently Subscribed to <br></br>a Starter Plan
                 </h4>
               </div>
               <h4 className="Text-10 my-3">Professional Plan includes:-</h4>
@@ -504,7 +504,7 @@ const DashboardHome = () => {
                   </defs>
                 </svg>
               </div>
-              <h3 className="Text-7  mt-3 mb-2 ">Editing Cost </h3>
+              <h3 className="Text-7 font-semibold  mt-3 mb-2 ">Editing Cost </h3>
 
               <h3 className="font-normal text-blue-900 text-sm  ">
                 This month

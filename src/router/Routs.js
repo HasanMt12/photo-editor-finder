@@ -17,6 +17,10 @@ import Signup from "../pages/components/signup/Signup";
 import Table from "./../Dashboard/table/Table";
 import Main from "./../layout/Main";
 import Invoice from "../pages/components/Invoice/Invoice";
+import Comments from "../Dashboard/notification-&-comments/Comments";
+import Product from "../Dashboard/CreatProject+/Product";
+import ProductDetails from "../Dashboard/CreatProject+/ProductDetails";
+import Upload from "../Dashboard/CreatProject+/Upload";
 
 export const router = createBrowserRouter([
   {
@@ -36,13 +40,14 @@ export const router = createBrowserRouter([
         path: "/forgotPass",
         element: <ForgotPass></ForgotPass>,
       },
-      // {
-      //   path: "/dashboard",
-      //   element: <DashBoard></DashBoard>,
-      // },
+     
       {
         path: "/notification",
         element: <Notification></Notification>,
+      },
+       {
+        path: "/comment",
+        element: <Comments></Comments>
       },
       {
         path: "/table",
@@ -81,6 +86,18 @@ export const router = createBrowserRouter([
       {
         path: "/dashboard/photo-edits",
         element: <PhotoEdits />,
+      },
+      {
+        path: "/dashboard/product",
+        element: <Product></Product>
+      },
+       {
+        path: "/dashboard/productDetails",
+        element: <ProductDetails></ProductDetails>
+      },
+      {
+        path: "/dashboard/upload",
+        element: <Upload></Upload>
       },
       {
         path: "/dashboard/video-edits",

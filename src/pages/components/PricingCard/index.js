@@ -26,13 +26,13 @@ const PricingCard = ({ pricingDetails }) => {
         </div>
         <div>
           <h2 className="text-lg font-semibold uppercase">Turnaround time</h2>
-          <h2 className="text-lg  mt-2">24HRS</h2>
-          <p className="text-xs mt-2">Free Turnaround</p>
+          <h2 className="text-lg font-semibold mt-2">24HRS</h2>
+          <p className="text-xs text-gray-600 mt-2">Free Turnaround</p>
         </div>
         <div>
           <h2 className="text-lg font-semibold">Pricing</h2>
-          <h4 className="text-lg  mt-2">${price}</h4>
-          <p className="text-xs mt-2">Per Edited Image</p>
+          <h4 className="text-lg font-semibold mt-2">${price}</h4>
+          <p className="text-xs text-gray-600 mt-2">Per Edited Image</p>
         </div>
         <div className="flex items-center h-full">
           <button
