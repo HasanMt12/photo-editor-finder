@@ -103,6 +103,7 @@ export const router = createBrowserRouter([
         path: "/dashboard/video-edits",
         element: <VideoEdits />,
       },
+      
     ],
   },
 ]);

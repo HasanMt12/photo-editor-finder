@@ -275,10 +275,11 @@ const Projects = () => {
           <div>
             {" "}
             {activeTab === 1 && (
-              <button className="create-project mr-[50px] my-5">
+              <Link to='/dashboard/product'><button className="create-project mr-[50px] my-5">
                 {" "}
                 <span className="text-3">Create Project +</span>{" "}
               </button>
+              </Link>
             )}
             {activeTab === 2 && (
               <div className="flex bg-transparent justify-center items-center gap-9 my-5">
@@ -300,10 +301,11 @@ const Projects = () => {
                   />
                 </div>
 
-                <button className="create-project mr-[50px]  ">
+                <Link to='/dashboard/product'><button className="create-project mr-[50px]  ">
                   {" "}
                   <span className="text-3">Create Project +</span>{" "}
                 </button>
+                </Link>
               </div>
             )}
           </div>

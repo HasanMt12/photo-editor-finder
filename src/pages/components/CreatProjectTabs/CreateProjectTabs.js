@@ -46,7 +46,9 @@ const CreateProjectTabs = () => {
           </Link>
         </li>
       </ul>
-      <div> <h4 className='text-[22px] text-[#6B6f86]'><span className='text-[#090D28] '>Step: </span> {pathname === "/dashboard/product" && <span className='text-[#324FF6]'>01</span>}
+      <div className='mr-[160px]'> 
+        <h4 className='text-[22px] text-[#6B6f86]'><span className='text-[#090D28] '>Step: </span>
+      {pathname === "/dashboard/product" && <span className='text-[#324FF6]'>01</span>}
       {pathname === "/dashboard/productDetails" && <span className='text-[#324FF6]'>02</span>}
       {pathname === "/dashboard/upload" && <span className='text-[#324FF6]'>03</span>}
       /03</h4> </div>

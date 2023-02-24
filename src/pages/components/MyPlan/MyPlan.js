@@ -82,9 +82,8 @@ const MyPlan = () => {
                 <h5 className='text-[#090D28] text-[20px] leading-[30px] tracking-[-0.333333px] '>Monthly package volume</h5>
                 <div className='flex justify-center items-center mt-2 w-[15px] h-[15px] border-[#324FF6] border-[2px] rounded-full border-solid'>
                     <svg width="2" height="8" viewBox="0 0 2 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.25 3.25H1.75V7.75H0.25V3.25ZM0.25 0.25H1.75V1.75H0.25V0.25Z" fill="#324FF6"/>
-</svg>
-
+                    <path d="M0.25 3.25H1.75V7.75H0.25V3.25ZM0.25 0.25H1.75V1.75H0.25V0.25Z" fill="#324FF6"/>
+                    </svg>
                 </div>
             </div>
             
