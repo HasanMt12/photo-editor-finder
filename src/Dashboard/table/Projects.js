@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
+import { Link } from "react-router-dom";
 import action1 from "../../assets/action1.png";
 import action2 from "../../assets/action2.png";
 import action3 from "../../assets/action3.png";
@@ -152,18 +153,8 @@ const Projects = () => {
     setActiveTab(index);
   };
 
-  const [modal, setModal] = useState(false);
 
-  const toggleModal = () => {
-    setModal(!modal);
-  };
-
-  if (modal) {
-    document.body.classList.add("active-modal");
-  } else {
-    document.body.classList.remove("active-modal");
-  }
-
+ 
   return (
     <div className="">
       <div className="ml-12 ">
@@ -177,7 +168,7 @@ const Projects = () => {
                 <div
                   className={`  py-2 px-4 ${
                     activeTab === 0
-                      ? " text-blue-600 font-semibold "
+                      ? " text-blue-600  "
                       : "text-gray-500"
                   }`}
                   onClick={() => handleTabClick(0)}
@@ -190,8 +181,8 @@ const Projects = () => {
                     <span
                       className={` w-[20px] h-[20px] py-3 px-3  rounded-full  flex justify-center items-center  ${
                         activeTab === 0
-                          ? "bg-blue-600   text-white"
-                          : "bg-gray-500 text-white "
+                          ? "bg-blue-600   text-white font-[500]"
+                          : "bg-gray-500 text-white font-[500]"
                       }`}
                     >
                       <span className="text-center font-semibold font-[Satoshi]">
@@ -202,7 +193,7 @@ const Projects = () => {
                 </div>
               </div>{" "}
               <hr
-                className={`  h-1 mt-4 -mb-6 ${
+                className={`  h-1 mt-5 -mb-5 ${
                   activeTab === 0 ? "bg-blue-500" : "hidden"
                 }`}
               />
@@ -213,8 +204,8 @@ const Projects = () => {
                 <div
                   className={`  py-2 px-4 ${
                     activeTab === 1
-                      ? " text-blue-600 font-semibold "
-                      : "text-gray-500"
+                      ? " text-blue-600  font-[500px]"
+                      : "text-gray-500 font-[500px]"
                   }`}
                   onClick={() => handleTabClick(1)}
                 >
@@ -226,8 +217,8 @@ const Projects = () => {
                     <span
                       className={` w-[20px] h-[20px] py-3 px-3 ml-2  rounded-full  flex justify-center items-center text- ${
                         activeTab === 1
-                          ? "bg-blue-600   text-white"
-                          : "bg-gray-500 text-white "
+                          ? "bg-blue-600   text-white font-[500]"
+                          : "bg-gray-500 text-white font-[500]"
                       }`}
                     >
                       <span className="text-center font-semibold font-[Satoshi]">
@@ -238,7 +229,7 @@ const Projects = () => {
                 </div>
               </div>
               <hr
-                className={`  h-1 mt-4 -mb-6 ${
+                className={`  h-1 mt-5 -mb-5 ${
                   activeTab === 1 ? "bg-blue-500" : "hidden"
                 }`}
               />
@@ -250,7 +241,7 @@ const Projects = () => {
                 <div
                   className={`  py-2 px-4 ${
                     activeTab === 2
-                      ? " text-blue-600 font-semibold "
+                      ? " text-blue-600 "
                       : "text-gray-500"
                   }`}
                   onClick={() => handleTabClick(2)}
@@ -275,7 +266,7 @@ const Projects = () => {
                 </div>
               </div>
               <hr
-                className={`  h-1 mt-4 -mb-6 ${
+                className={`  h-1 mt-5 -mb-5 ${
                   activeTab === 2 ? "bg-blue-500" : "hidden"
                 }`}
               />
@@ -284,10 +275,11 @@ const Projects = () => {
           <div>
             {" "}
             {activeTab === 1 && (
-              <button className="create-project mr-[50px] my-5">
+              <Link to='/dashboard/product'><button className="create-project mr-[50px] my-5">
                 {" "}
                 <span className="text-3">Create Project +</span>{" "}
               </button>
+              </Link>
             )}
             {activeTab === 2 && (
               <div className="flex bg-transparent justify-center items-center gap-9 my-5">
@@ -309,10 +301,11 @@ const Projects = () => {
                   />
                 </div>
 
-                <button className="create-project mr-[50px]  ">
+                <Link to='/dashboard/product'><button className="create-project mr-[50px]  ">
                   {" "}
                   <span className="text-3">Create Project +</span>{" "}
                 </button>
+                </Link>
               </div>
             )}
           </div>
@@ -418,13 +411,14 @@ const Projects = () => {
                   You can start creating a project now
                 </p>
 
-                <button
+               <Link to='/dashboard/product' ><button
                   style={{ fontFamily: "Poppins" }}
                   class="flex items-center px-5 py-3 my-5 mx-auto font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 text-base"
                 >
                   <span class="mx-1">Create Project</span>
                   <span>+</span>
                 </button>
+                </Link>
               </div>
             </div>
           )}

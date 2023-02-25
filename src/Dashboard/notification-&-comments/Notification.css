@@ -1,19 +1,21 @@
 .notification {
-  /* display: flex; */
-  /* margin: auto auto; */
-  flex-direction: column;
+  /*display: flex;
+  *//*margin: auto auto;
+  */flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 35px;
   gap: 70px;
-
   position: relative;
-  width: 525.79px;
-  height: 338px;
-
+  width: 380.79px;
+  height: 400px;
   background: #ffffff;
   box-shadow: 0px 10px 24px rgba(9, 17, 89, 0.1);
-  border-radius: 16px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 .date {
   /* width: 45px; */
@@ -80,6 +82,29 @@ margin-bottom: 31px;
   order: 0;
   flex-grow: 0;
 }
+.newNotification2 {
+  width: 391px;
+  height: 21px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  margin-top: 8px;
+  /* Off-Black */
+
+  color: #6b6f86;
+background-color: #ffffff;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
 .newNotification {
   width: 391px;
   height: 21px;
@@ -102,7 +127,6 @@ margin-bottom: 31px;
   order: 1;
   flex-grow: 0;
 }
-
 /* comments */
 
 .time {

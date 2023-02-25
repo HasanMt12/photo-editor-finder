@@ -62,7 +62,7 @@ const DashboardHome = () => {
               <h3 className="Text-6 ">254</h3>
             </div>
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-between ">
             <div className="pl-8">
               <svg
                 className="mt-4"
@@ -292,19 +292,20 @@ const DashboardHome = () => {
                   ></path>
                 </svg>
               </div>
-              <h3 className="Text-7  mt-3 mb-2 ">
+              <h3 className="Text-7 font-semibold mt-3 mb-2 ">
                 Upgrade to Professional Plan
               </h3>
               <h3 className="font-medium text-4xl ">$ 200</h3>
-              <div className="upgradeButton mt-6 flex items-center justify-center">
-                <h3 className="text-center Text-8">Upgrade Now</h3>
+              <div className="upgradeButton mt-6 flex items-center justify-center cursor-pointer hover:bg-[#536bbb]">
+                
+                <h3 className="text-center Text-8 hover:text-gray-200">Upgrade Now</h3>
               </div>
             </div>
 
-            <div className="pl-6 pt-4">
-              <div className="w-[200px] h-[40px] ">
-                <h4 className="font-medium text-sm text-start Text-9">
-                  You’re Currently Subscribed to a Starter Plan
+            <div className="pl-6 pt-4 pr-2">
+              <div className="w-[285px] h-[40px] ">
+                <h4 className="font-medium text-sm text-start Text-9 ">
+                  You’re Currently Subscribed to <br></br>a Starter Plan
                 </h4>
               </div>
               <h4 className="Text-10 my-3">Professional Plan includes:-</h4>
@@ -503,7 +504,7 @@ const DashboardHome = () => {
                   </defs>
                 </svg>
               </div>
-              <h3 className="Text-7  mt-3 mb-2 ">Editing Cost </h3>
+              <h3 className="Text-7 font-semibold  mt-3 mb-2 ">Editing Cost </h3>
 
               <h3 className="font-normal text-blue-900 text-sm  ">
                 This month
@@ -703,7 +704,7 @@ const DashboardHome = () => {
                     style={{ color: "#777777", fontFamily: "Satoshi" }}
                     className="font-normal text-xs "
                   >
-                    High Resolution Enhancements
+                    High Resolution Enhancements 
                   </h4>
                 </div>
               </div>
@@ -737,42 +738,7 @@ const DashboardHome = () => {
           </div>
         </div>
 
-        {modal && (
-          <div className="modal">
-            <div onClick={toggleModal} className="overlay">
-              <div className="notification modal-content">
-                <h1 className="text-[ #0C0E41] notify mx-auto">
-                  You have 1 new Notifications
-                </h1>
-                <div className="flex justify-between items-center gap-6 mt-[38px]">
-                  <img className="" src={gallery} alt="" />
-                  <div>
-                    <p className="font-bold pb-2 date">Feb 22</p>
-                    <p className="newNotification">
-                      If you like what we do, please tell your friends and
-                      share.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex justify-between items-center gap-6 mt-[20px]">
-                  <img className="" src={gallery} alt="" />
-                  <div>
-                    <p className="font-bold pb-2 date">Feb 22</p>
-                    <p className="newNotification">
-                      If you like what we do, please tell your friends and
-                      share.
-                    </p>
-                  </div>
-                </div>
-                <button className="flex mx-auto mt-[70px] mb-[31px]">
-                  <Link to="/viewAll" className=" view ">
-                    View All
-                  </Link>
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
+       
       </div>
     </div>
 

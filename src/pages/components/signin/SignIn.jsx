@@ -7,7 +7,7 @@ const SignIn = () => {
   const [forgotPass, setForgotPass] = useState(null);
 
   return (
-    <div className="flex   ">
+    <div className="flex ">
       {/* background */}
       <div className="bg  ">
         <div className="logo">

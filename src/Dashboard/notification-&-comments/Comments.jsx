@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import gallery from "../../assets/gallery.png";
+import './Notification.css'
 const Comments = () => {
     return (
         <div className="notification mt-10">

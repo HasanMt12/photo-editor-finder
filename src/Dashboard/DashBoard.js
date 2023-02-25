@@ -109,7 +109,7 @@ const DashBoard = () => {
             </Link>
 
             <Link
-              to="/dashboard"
+              to="/dashboard/drive"
               className="flex items-center pl-16 py-1 hover:text-indigo-600 border-l-4 border-white cursor-pointer h-[40px]  text-black transition-colors duration-300 transform  hover:bg-violate-300 hover:bg-indigo-300/60 hover:border-l-4 hover:border-indigo-600 "
             >
               <HiOutlineFolder className="h-[20px] w-[22px] "></HiOutlineFolder>

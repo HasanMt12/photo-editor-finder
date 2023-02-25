@@ -23,7 +23,10 @@ const VideoEdits = () => {
   };
   return (
     <div className="bg-[#F5F5F5]">
-      <div className="bg-white min-h-screen ml-12 mt-4">
+      
+      
+      <div className="bg-white ml-12 mt-4 w-[95%] mx-auto h-full">
+        
         <div className="p-8">
           <h1 className="font-semibold text-3xl text-center">
             Video Edits Pricing for Services

@@ -12,17 +12,42 @@ const MyPlan = () => {
     };
    
     return (
-      <div className="bg-[#F5F5F5]">
-        <div className="ml-12 bg-white w-[95%] mx-auto mt-4">
-          <div className="pb-4 ">
-            <div className="flex justify-center  items-center">
-              <div>
-                <h2 className="text-[#090D28] text-[36px] leading-[54px] font-semibold mt-[24px]">
-                  We’ve Plans for Everyone
-                </h2>
-                <p className="text-[#6B6F86] text-[16px] mb-7 leading-[22px] tracking-[-0.333333px] font-normal text-center">
-                  Choose a plan to get started
-                </p>
+       
+       <div className="bg-[#F5F5F5]">
+
+    
+      <div className="bg-white ml-12 w-[95%] mx-auto mt-4 ">
+       <div className='pb-4 '>
+            <div className='flex justify-center  items-center'> 
+                <div>
+                    <h2 className='text-[#090D28] text-[36px] leading-[54px] font-semibold mt-[24px]'>We’ve Plans for Everyone</h2>
+                    <p className='text-[#6B6F86] text-[16px] mb-7 leading-[22px] tracking-[-0.333333px] font-normal text-center'>Choose a plan to get started</p>
+
+                </div>
+            </div>
+
+            <div className='flex  justify-between items-center'>
+                <div >
+                    
+                    <h2 className='text-[#090D28]  font-[500px] text-2xl ml-[80px] tracking-[-0.333333px]'>Subscription</h2>
+                </div>
+              <div className='flex justify-start items-center gap-3  mr-[30px]'>
+                <h4 className='text-[#6B6F86] font-[500px] text-[20px] leading-[26px] '>Starter</h4>
+               <label for="Toggle1" className="inline-flex items-center space-x-4 cursor-pointer text-gray-100">
+
+            <span className="relative">
+              <input id="Toggle1" type="checkbox" className="hidden peer" />
+              <div className="w-10 h-6 rounded-full shadow-inner bg-white border-[#324FF6] border-[1px] peer-checked:bg-[#324FF6]"></div>
+              <div className="absolute inset-y-0 left-0 w-4 h-4 m-1 rounded-full shadow peer-checked:right-0 peer-checked:left-auto border-[1px] border-[#324FF6] bg-white"></div>
+            </span>
+
+          </label>
+                <h4 className='text-[#324FF6] text-[20px] leading-[27px] font-[500px]'>Professional</h4>
+                <div className='bg-[#E1FFED] w-[97px] h-[28px] p-2 rounded-[5px]'>
+                    <h4  className='text-[#0EC970] text-[10px] leading-[10px] font-bold'>Save up to 45%</h4>
+
+                </div>
+                
               </div>
             </div>
 
@@ -81,25 +106,18 @@ const MyPlan = () => {
 	</div>
 </fieldset> */}
 
-          <div className="flex justify-start items-center mt-3">
-            <div className="flex justify-center gap-1 items-center pl-2 mb-8">
-              <h5 className="text-[#090D28] text-[20px] leading-[30px] tracking-[-0.333333px] ">
-                Monthly package volume
-              </h5>
-              <div className="flex justify-center items-center mt-2 w-[15px] h-[15px] border-[#324FF6] border-[2px] rounded-full border-solid">
-                <svg
-                  width="2"
-                  height="8"
-                  viewBox="0 0 2 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0.25 3.25H1.75V7.75H0.25V3.25ZM0.25 0.25H1.75V1.75H0.25V0.25Z"
-                    fill="#324FF6"
-                  />
-                </svg>
-              </div>
+
+   
+         
+          <div className='flex justify-start items-center mt-3'>
+
+            <div className='flex justify-center gap-1 items-center pl-2 mb-8'>
+                <h5 className='text-[#090D28] text-[20px] leading-[30px] tracking-[-0.333333px] '>Monthly package volume</h5>
+                <div className='flex justify-center items-center mt-2 w-[15px] h-[15px] border-[#324FF6] border-[2px] rounded-full border-solid'>
+                    <svg width="2" height="8" viewBox="0 0 2 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.25 3.25H1.75V7.75H0.25V3.25ZM0.25 0.25H1.75V1.75H0.25V0.25Z" fill="#324FF6"/>
+                    </svg>
+                </div>
             </div>
 
             <div className=" w-8/12 mx-auto " style={{ padding: 20 }}>
