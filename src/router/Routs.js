@@ -21,6 +21,7 @@ import Comments from "../Dashboard/notification-&-comments/Comments";
 import Product from "../Dashboard/CreatProject+/Product";
 import ProductDetails from "../Dashboard/CreatProject+/ProductDetails";
 import Upload from "../Dashboard/CreatProject+/Upload";
+import PhotoEditDetail from "../Dashboard/CreatProject+/PhotoeditDetails/PhotoEditDetail";
 
 export const router = createBrowserRouter([
   {
@@ -94,6 +95,10 @@ export const router = createBrowserRouter([
        {
         path: "/dashboard/productDetails",
         element: <ProductDetails></ProductDetails>
+      },
+      {
+        path: "/dashboard/photoProductDetails",
+        element: <PhotoEditDetail></PhotoEditDetail>
       },
       {
         path: "/dashboard/upload",

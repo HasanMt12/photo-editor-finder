@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const CreateProjectTabs = () => {
@@ -22,7 +23,7 @@ const CreateProjectTabs = () => {
           </Link>
         </li>
         <li className="mr-[90px]">
-          <Link
+          <Link 
             to="/dashboard/productDetails"
             className={`inline-block p-4 ${
               pathname === "/dashboard/productDetails"
