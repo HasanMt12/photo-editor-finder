@@ -1,15 +1,13 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
-import img from "../../assets/Project Icon.png";
-import search from "../../assets/search.png";
-import axios from "axios";
-import "./Table.css";
-import { AiFillDelete } from "react-icons/ai";
-import { Link } from "react-router-dom";
 import action1 from "../../assets/action1.png";
 import action2 from "../../assets/action2.png";
 import action3 from "../../assets/action3.png";
 import Folder from "../../assets/Folder 1.png";
+import img from "../../assets/Project Icon.png";
+import search from "../../assets/search.png";
+import "./Table.css";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -351,7 +349,7 @@ const Table = () => {
               />
               <hr className="line w-[178.71px] h-[0.22px] -ml-5" />
             </div>
-            <h1 className="no-projects mt-[12.6px] text-center -ml-8">
+            <h1 className="no-projects mt-[12.6px] text-center -ml-12">
               No Projects Found{" "}
             </h1>
             <p className="start -ml-16">You can start creating a project now</p>

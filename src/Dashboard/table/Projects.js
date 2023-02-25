@@ -166,7 +166,7 @@ const Projects = () => {
 
   return (
     <div className="">
-      <div className="ml-8 ">
+      <div className="ml-12 ">
      
         <div className="flex justify-between items-center bg-white">
           <div className="my-5 gap-2 flex items-center justify-start ml-20">

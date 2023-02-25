@@ -25,8 +25,8 @@ const DashboardHome = () => {
    
     <div className="main-bg ">
       
-      <div className="ml-8 main-bg " >
-        <div className="h-[50px] -ml-8 rightSide" >
+      <div className="ml-12 main-bg " >
+        <div className="h-[50px] -ml-12 rightSide" >
 </div> 
       <div className="-mt-[60px] grid grid-cols-4 gap-1 shadow-section  justify-between h-36 w-[95%] mx-auto mb-4 second-bg md:divide-x">
           <div className="flex justify-between">

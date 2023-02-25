@@ -87,8 +87,8 @@ const PhotoEdits = () => {
     },
   ];
   return (
-    <div className="">
-      <div className="ml-8">
+    <div className="bg-[#F5F5F5]">
+      <div className="bg-white ml-12 mt-4">
         <div className="p-8">
           <h1 className="font-semibold text-3xl text-center">
             Image Edits Pricing for Services

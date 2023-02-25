@@ -1,12 +1,9 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react';
-import avatar from "../../../assets/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction 1@2x.png"
-import logo2 from "../../../assets/Captae-removebg-preview.png";
-import DataTable from 'react-data-table-component';
 import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import DataTable from 'react-data-table-component';
+import project from '../../../assets/Project Icon.png';
 import search from "../../../assets/search.png";
-import './invoice.css'
-import project from '../../../assets/Project Icon.png'
+import './invoice.css';
 const Invoice = () => {
      const [modal, setModal] = useState(false);
 
@@ -164,7 +161,7 @@ const Invoice = () => {
 
 
     return (
-          <div className=" ml-8">
+          <div className=" ml-12">
 
 
 

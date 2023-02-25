@@ -1,23 +1,20 @@
 import React, { useState } from "react";
+import { AiOutlineDollarCircle, AiOutlineLogout } from "react-icons/ai";
 import { BiHomeAlt } from "react-icons/bi";
 import { FiFileText } from "react-icons/fi";
-import { AiOutlineDollarCircle } from "react-icons/ai";
-import { HiOutlineUserGroup } from "react-icons/hi";
-import { HiOutlineShoppingBag } from "react-icons/hi";
-import { TbFileInvoice } from "react-icons/tb";
-import { HiOutlineFolder } from "react-icons/hi";
-import { AiOutlineLogout } from "react-icons/ai";
+import { HiOutlineFolder, HiOutlineShoppingBag, HiOutlineUserGroup } from "react-icons/hi";
 import { HiOutlinePhoto } from "react-icons/hi2";
-import "./DashBoard.css";
-import sd from "../assets/Captae-removebg-preview.png";
-import progressDiv from "../assets/Group 18520.png";
-import rightArrow from "../assets/rightArrow.png";
+import { TbFileInvoice } from "react-icons/tb";
 import arrows from "../assets/arrows.png";
-import avatar from "../assets/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction 1.png";
+import sd from "../assets/Captae-removebg-preview.png";
 import gallery from "../assets/gallery.png";
+import progressDiv from "../assets/Group 18520.png";
+import avatar from "../assets/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction 1.png";
+import rightArrow from "../assets/rightArrow.png";
+import "./DashBoard.css";
 
-import logo from "../assets/Final Logo 1.png";
 import { Link } from "react-router-dom";
+import logo from "../assets/Final Logo 1.png";
 const DashBoard = () => {
   const [modal, setModal] = useState(false);
 
@@ -286,7 +283,7 @@ const DashBoard = () => {
 
       {/* right side layout */}
       <div className="main-bg sm:ml-64">
-        <div className="ml-8 main-bg">
+        <div className="ml-12 main-bg">
           {/* first section section */}
           <div className="flex pl-20 justify-between h-40 mb-4 rightSide">
             <div className="text-white">
