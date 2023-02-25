@@ -24,9 +24,10 @@ const CreateProjectTabs = () => {
         </li>
         <li className="mr-[90px]">
           <Link 
-            to="/dashboard/productDetails"
+            to="/dashboard/photoProductDetails" 
             className={`inline-block p-4 ${
-              pathname === "/dashboard/productDetails"
+         
+              pathname === "/dashboard/photoProductDetails"
                 ? " text-[#090D28] border-b-4 border-[#324FF6] active text-[20px]"
                 : "border-b-2 border-transparent text-[20px] "
             } rounded-t-lg`}
@@ -51,6 +52,7 @@ const CreateProjectTabs = () => {
         <h4 className='text-[22px] text-[#6B6f86]'><span className='text-[#090D28] '>Step: </span>
       {pathname === "/dashboard/product" && <span className='text-[#324FF6]'>01</span>}
       {pathname === "/dashboard/productDetails" && <span className='text-[#324FF6]'>02</span>}
+      {pathname === "/dashboard/photoProductDetails" && <span className='text-[#324FF6]'>02</span>}
       {pathname === "/dashboard/upload" && <span className='text-[#324FF6]'>03</span>}
       /03</h4> </div>
     </div>

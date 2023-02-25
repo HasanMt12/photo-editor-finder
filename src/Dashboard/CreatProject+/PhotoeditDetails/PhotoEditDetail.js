@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import CreateProjectTabs from '../../../pages/components/CreatProjectTabs/CreateProjectTabs';
+import Basic from './Basic';
 
 const PhotoEditDetail = () => {
     const [activeTab, setActiveTab] = useState(0);
@@ -42,7 +43,7 @@ const PhotoEditDetail = () => {
 
                     {/* Basic */}
                    
-                        <Link to='' onClick={ () => handleTabClick(0)} className=' h-[192px] w-[24%]  mr-[2%] focus:border-[3px] rounded-[4px] focus:border-[#5E75FB] cursor-pointer pl-[4%] pr-[2%] py-[1%] '>
+                        <Link to='' onClick={()=> handleTabClick(0)} className= {`h-[192px] w-[24%]  mr-[2%] focus:border-[3px] rounded-[4px] ${activeTab === 0 ?"border-block":"border-none"} border-[#5E75FB] cursor-pointer pl-[4%] pr-[2%] py-[1%] `}>
                              <div className='flex justify-end'>
                                 <div className='flex justify-center items-center mt-2 w-[15px] h-[15px] border-[#324FF6] border-[2px] rounded-full border-solid'>
                                     <svg width="2" height="8" viewBox="0 0 2 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +134,9 @@ const PhotoEditDetail = () => {
                             <h5 className='text-[#5E75FB] text-3xl font-medium mt-3'>Basic Plus</h5>
                             <h4 className='text-[#777777] text-lg mt-2'>4 Credits</h4>
                     </Link>
+
      <hr className='bg-[#D2D2D2] h-[130px] w-[0.5px]'></hr>
+
                       <Link to='' onClick={ () => handleTabClick(0)} className=' h-[192px] w-[24%]  mr-[2%] focus:border-[3px] rounded-[4px] focus:border-[#5E75FB] cursor-pointer pl-[4%] pr-[2%] py-[1%] '>
                              <div className='flex justify-end'>
                                 <div className='flex justify-center items-center mt-2 w-[15px] h-[15px] border-[#324FF6] border-[2px] rounded-full border-solid'>
@@ -228,9 +231,9 @@ const PhotoEditDetail = () => {
                 </div>
 
                 
-                {/* {activeTab === 0 && <BrandForm></BrandForm>}
+                 {activeTab === 0 && <Basic></Basic>}
 
-                {activeTab===1 && <UnBrandingForm></UnBrandingForm>} */}
+                {/* {activeTab===1 && <UnBrandingForm></UnBrandingForm>}  */}
  
             
             <div className='flex justify-end items-center gap-2 mr-[130px] mt-[76px]'>
