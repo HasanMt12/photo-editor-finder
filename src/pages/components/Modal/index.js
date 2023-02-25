@@ -9,13 +9,12 @@ const Modal = ({ modalStatus, hide, modalData }) => {
 
         
         <div
-        onClick={() => hide(false)}
+          onClick={() => hide(false)}
           class="relative z-10"
           aria-labelledby="modal-title"
           role="dialog"
           aria-modal="true"
         >
-          
           <div   class="fixed inset-0 bg-gray-600 bg-opacity-40 transition-opacity"></div>
           <div data-aos="zoom-in" class=" ml-64  fixed inset-0 z-10 overflow-y-auto shadow-gray-300 shadow-lg">
             <div class="flex min-h-full items-end justify-center pl-4 py-4 text-center sm:items-center sm:p-0">

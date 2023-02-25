@@ -9,7 +9,7 @@ const Notification = () => {
   return (
   <div>
       <div className="notification">
-      <h1 className="text-[ #0C0E41] notify mx-auto">You have 1 new Notifications</h1>
+      <h1 className="text-[ #0C0E41] notify mx-auto">You have 112 new Notifications</h1>
       <div className="flex justify-between items-center gap-6 mt-[38px]">
         <img className="" src={gallery} alt="" />
         <div>
